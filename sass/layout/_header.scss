@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as *;
+
+header.header-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+        margin-right: 260px;
+        a {
+            color: $gray;   
+        }
+        
+       
+}
+}
+   
+    a.activate::before {
+        content: "";
+        width: 27px;
+        height: 4px;
+        position: absolute;
+        background-color: $pink;
+        right: 770px;
+        top: 65px;
+        
+    }

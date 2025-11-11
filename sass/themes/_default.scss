@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as *;
+html{
+    font-family: $primary-font;
+}
+
+
+body {
+    margin-left: 156px;
+    margin-top: 35px;
+    padding: 0;
+    background-color: $background-black;
+    background-image: url(../../img/ellipse-small.svg),
+                      url(../../img/ellipse-big.svg);
+    background-repeat: no-repeat;                  
+    background-position: 1250px 550px, 1005px 250px;
+
+
+
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}

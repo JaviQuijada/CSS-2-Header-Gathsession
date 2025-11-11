@@ -1,0 +1,22 @@
+.espacios {
+    ul{
+        display: flex;
+        justify-content:first baseline;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        gap: 145px;
+        position: relative;
+    }
+
+    h3 {
+        width: 30px;
+        position: relative;
+        right: 134px;
+        color: white;
+        
+
+    }
+
+}
