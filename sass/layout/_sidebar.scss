@@ -1,22 +1,41 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .espacios {
-    ul{
-        display: flex;
-        justify-content:first baseline;
-    }
-    li {
-        display: flex;
-        align-items: center;
-        gap: 145px;
-        position: relative;
-    }
-
-    h3 {
-        width: 30px;
-        position: relative;
-        right: 134px;
-        color: white;
-        
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    @include breakpoint(notebook) {
+      display: inline-flex;
+      gap: 0;
 
     }
+  }
+  li {
+    display: flex;
+    align-items: center;
+    gap: 145px;
+    @include breakpoint(notebook) {
+      width: 62%;
+      gap: 55px;
+    }
+  }
+  img {
+    @include breakpoint(notebook) {
+      width: 70%;
+    }
+  }
 
+  h3 {
+    width: 30px;
+    position: relative;
+    right: 134px;
+    color: white;
+    font-weight: 300;
+    @include breakpoint(notebook) {
+      font-size: 12px;
+      position: relative;
+      right: 55px;
+    }
+  }
 }

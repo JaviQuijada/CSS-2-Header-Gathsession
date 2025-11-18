@@ -8,19 +8,43 @@
 
 .espacios ul {
   display: flex;
-  justify-content: first baseline;
+  justify-content: flex-start;
+}
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .espacios ul {
+    display: inline-flex;
+    gap: 0;
+  }
 }
 .espacios li {
   display: flex;
   align-items: center;
   gap: 145px;
-  position: relative;
+}
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .espacios li {
+    width: 62%;
+    gap: 55px;
+  }
+}
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .espacios img {
+    width: 70%;
+  }
 }
 .espacios h3 {
   width: 30px;
   position: relative;
   right: 134px;
   color: white;
+  font-weight: 300;
+}
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .espacios h3 {
+    font-size: 12px;
+    position: relative;
+    right: 55px;
+  }
 }
 
 header.header-principal {
@@ -28,14 +52,30 @@ header.header-principal {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1280px) and (min-width: 1025px) {
+  header.header-principal img {
+    width: 16%;
+  }
+}
 header.header-principal ul {
   display: flex;
   justify-content: space-between;
   gap: 60px;
   margin-right: 260px;
 }
+@media (max-width: 1280px) and (min-width: 1025px) {
+  header.header-principal ul {
+    margin-right: 140px;
+    gap: 34px;
+  }
+}
 header.header-principal ul a {
   color: #95969C;
+}
+@media (max-width: 1280px) and (min-width: 1025px) {
+  header.header-principal ul a {
+    font-size: 12px;
+  }
 }
 
 a.activate::before {
@@ -47,14 +87,34 @@ a.activate::before {
   right: 770px;
   top: 65px;
 }
+@media (max-width: 1280px) and (min-width: 1025px) {
+  a.activate::before {
+    position: absolute;
+    right: 475px;
+    top: 62px;
+    width: 23px;
+    height: 2px;
+  }
+}
 
 .hero {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .hero {
+    position: relative;
+    bottom: 20px;
+  }
+}
 .hero_text {
   margin-top: 150px;
   max-width: 45%;
+}
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .hero_text {
+    max-width: 60%;
+  }
 }
 .hero_text-title {
   font-family: "Merriweather", serif;
@@ -64,12 +124,27 @@ a.activate::before {
   margin-bottom: 30px;
   line-height: 100px;
 }
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .hero_text-title {
+    font-size: 57px;
+    line-height: 67px;
+    margin-bottom: 10px;
+  }
+}
 .hero_text-subtitle {
   font-size: 26px;
   color: #95969C;
   line-height: 40px;
   max-width: 90%;
   margin-bottom: 45px;
+}
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .hero_text-subtitle {
+    font-size: 16px;
+    line-height: 25px;
+    max-width: 89%;
+    margin-bottom: 14px;
+  }
 }
 .hero_imagen {
   max-width: 50%;
@@ -82,9 +157,21 @@ a.activate::before {
   margin-top: 100px;
   position: relative;
 }
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .hero_imagen {
+    max-width: 20%;
+    margin-left: 274px;
+    margin-top: 112px;
+  }
+}
 .hero_imagen-person {
   position: relative;
   right: 150px;
+}
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .hero_imagen-person img {
+    width: 85%;
+  }
 }
 .hero_imagen-person-1 {
   position: relative;
@@ -96,28 +183,62 @@ a.activate::before {
   top: 26px;
   right: 0;
 }
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .hero_imagen-person-2 {
+    top: 10px;
+    right: 0;
+  }
+}
 .hero_imagen-person-3 {
   position: relative;
   top: -757px;
   right: -271px;
+}
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .hero_imagen-person-3 {
+    top: -492px;
+    left: 170px;
+  }
 }
 .hero_imagen-person-4 {
   position: relative;
   top: -731px;
   right: -271px;
 }
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .hero_imagen-person-4 {
+    top: -482px;
+    right: -170px;
+  }
+}
 .hero_imagen-person-5 {
   position: relative;
   top: -1377px;
   right: -541px;
 }
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .hero_imagen-person-5 {
+    top: -897px;
+    right: -340px;
+  }
+}
 .hero .buttons {
   margin-bottom: 120px;
+}
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .hero .buttons {
+    margin-bottom: 60px;
+  }
 }
 .hero .buttons ul {
   display: flex; /* pone los <li> en línea */
   align-items: center;
   gap: 50px;
+}
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .hero .buttons ul {
+    gap: 32px;
+  }
 }
 .hero .buttons li {
   display: flex;
@@ -137,6 +258,18 @@ a.activate::before {
   padding: 20px 80px;
   border-radius: 20px 20px 20px 0;
   font-weight: 600;
+}
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .buttons .button {
+    padding: 14px 48px;
+    border-radius: 13px 13px 13px 0;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .buttons a {
+    font-size: 13px;
+  }
 }
 
 a.subrayado {
@@ -171,6 +304,13 @@ body {
   background-image: url(../../img/ellipse-small.svg), url(../../img/ellipse-big.svg);
   background-repeat: no-repeat;
   background-position: 1250px 550px, 1005px 250px;
+}
+@media (max-width: 1280px) and (min-width: 1025px) {
+  body {
+    margin-left: 100px;
+    background-position: 844px 372px, 693px 209px;
+    background-size: 56%;
+  }
 }
 
 a {

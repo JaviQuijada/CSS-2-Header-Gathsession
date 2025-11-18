@@ -1,4 +1,6 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 html{
     font-family: $primary-font;
 }
@@ -13,6 +15,11 @@ body {
                       url(../../img/ellipse-big.svg);
     background-repeat: no-repeat;                  
     background-position: 1250px 550px, 1005px 250px;
+    @include breakpoint(notebook) {
+        margin-left: 100px;
+        background-position: 844px 372px, 693px 209px;
+        background-size: 56%;
+    }
 
 
 

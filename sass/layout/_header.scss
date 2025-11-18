@@ -1,29 +1,49 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 header.header-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    @include breakpoint(notebook){
+    width: 16%;
+  }
+}
+  ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    ul {
-        display: flex;
-        justify-content: space-between;
-        gap: 60px;
-        margin-right: 260px;
-        a {
-            color: $gray;   
-        }
-        
-       
-}
-}
-   
-    a.activate::before {
-        content: "";
-        width: 27px;
-        height: 4px;
-        position: absolute;
-        background-color: $pink;
-        right: 770px;
-        top: 65px;
-        
+    gap: 60px;
+    margin-right: 260px;
+    @include breakpoint(notebook){
+        margin-right: 140px;
+        gap: 34px;
+
+
     }
+    a {
+      color: $gray;
+      @include breakpoint(notebook){
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+a.activate::before {
+  content: "";
+  width: 27px;
+  height: 4px;
+  position: absolute;
+  background-color: $pink;
+  right: 770px;
+  top: 65px;
+  @include breakpoint(notebook) {
+    position: absolute;
+    right: 475px;
+    top: 62px;
+    width: 23px;
+    height: 2px;
+
+  }
+}
